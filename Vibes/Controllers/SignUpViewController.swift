@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
+
+protocol SignUpDelegate {
+    
+}
 
 class SignUpViewController: UIViewController {
+
+    var delegate : SignUpDelegate?
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -26,6 +34,25 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func createAccountPressed(_ sender: UIButton) {
+        
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {
+            (user, error) in
+            
+            SVProgressHUD.show()
+            
+            if error != nil {
+                print(error!)
+            } else {
+                //success
+                print("Registration Successful!")
+                
+                SVProgressHUD.dismiss()
+                
+                
+            }
+            
+        }
+        
     }
     
 }
