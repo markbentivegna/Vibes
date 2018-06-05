@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B4379497870099F0C07E378E /* Pods_Vibes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6ABC67B37332332450B245 /* Pods_Vibes.framework */; };
+		E7763A6D20C616E500DF99A4 /* VibesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7763A6C20C616E500DF99A4 /* VibesCollectionViewController.swift */; };
+		E7763A6F20C6187400DF99A4 /* VibesCollectionCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7763A6E20C6187400DF99A4 /* VibesCollectionCustomCell.swift */; };
 		E7BCBA0220AA630700670C1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBA0120AA630700670C1F /* AppDelegate.swift */; };
 		E7BCBA0420AA630700670C1F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBA0320AA630700670C1F /* WelcomeViewController.swift */; };
 		E7BCBA0720AA630700670C1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBA0520AA630700670C1F /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		0F6ABC67B37332332450B245 /* Pods_Vibes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vibes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C0F9CCEFAD2DC1B989EBF1 /* Pods-Vibes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vibes/Pods-Vibes.debug.xcconfig"; sourceTree = "<group>"; };
 		C5107A50C0BCBD493F386952 /* Pods-Vibes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vibes/Pods-Vibes.release.xcconfig"; sourceTree = "<group>"; };
+		E7763A6C20C616E500DF99A4 /* VibesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesCollectionViewController.swift; sourceTree = "<group>"; };
+		E7763A6E20C6187400DF99A4 /* VibesCollectionCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesCollectionCustomCell.swift; sourceTree = "<group>"; };
 		E7BCB9FE20AA630700670C1F /* Vibes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BCBA0120AA630700670C1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BCBA0320AA630700670C1F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7763A6B20C6167400DF99A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E7BCB9F520AA630700670C1F = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +96,7 @@
 		E7BCBA0020AA630700670C1F /* Vibes */ = {
 			isa = PBXGroup;
 			children = (
+				E7763A6B20C6167400DF99A4 /* Models */,
 				E7BCBA1620AA790600670C1F /* Views */,
 				E7BCBA1520AA78F300670C1F /* Controllers */,
 				E7BCBA0120AA630700670C1F /* AppDelegate.swift */,
@@ -100,6 +113,7 @@
 				E7BCBA0320AA630700670C1F /* WelcomeViewController.swift */,
 				E7BCBA1320AA761C00670C1F /* SignUpViewController.swift */,
 				E7BD0B8E20C2234D00E70755 /* LogInViewController.swift */,
+				E7763A6C20C616E500DF99A4 /* VibesCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -109,6 +123,7 @@
 			children = (
 				E7BCBA0520AA630700670C1F /* Main.storyboard */,
 				E7BCBA0A20AA630800670C1F /* LaunchScreen.storyboard */,
+				E7763A6E20C6187400DF99A4 /* VibesCollectionCustomCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7763A6D20C616E500DF99A4 /* VibesCollectionViewController.swift in Sources */,
 				E7BD0B8F20C2234D00E70755 /* LogInViewController.swift in Sources */,
 				E7BCBA1420AA761C00670C1F /* SignUpViewController.swift in Sources */,
 				E7BCBA0420AA630700670C1F /* WelcomeViewController.swift in Sources */,
+				E7763A6F20C6187400DF99A4 /* VibesCollectionCustomCell.swift in Sources */,
 				E7BCBA0220AA630700670C1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
